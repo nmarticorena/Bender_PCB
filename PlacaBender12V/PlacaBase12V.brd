@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -142,29 +142,25 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="83" y2="0" width="0" layer="20"/>
 <wire x1="83" y1="0" x2="83" y2="58" width="0" layer="20"/>
 <wire x1="83" y1="58" x2="0" y2="58" width="0" layer="20"/>
 <wire x1="0" y1="58" x2="0" y2="0" width="0" layer="20"/>
-<hole x="3" y="55" drill="3.2"/>
-<hole x="80" y="55" drill="3.2"/>
-<hole x="3" y="3" drill="3.2"/>
-<hole x="80" y="3" drill="3.2"/>
+<hole x="3" y="55" drill="3"/>
+<hole x="80" y="55" drill="3"/>
+<hole x="3" y="3" drill="3"/>
+<hole x="80" y="3" drill="3"/>
 <text x="5" y="30" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">+</text>
 <text x="5" y="24" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">+</text>
 <text x="5" y="16" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">+</text>
-<text x="14" y="31" size="2.54" layer="16" font="vector" rot="MR0">-</text>
-<text x="14" y="24" size="2.54" layer="16" font="vector" rot="MR0">-</text>
-<text x="14" y="16" size="2.54" layer="16" font="vector" rot="MR0">-</text>
-<text x="20" y="4" size="1.27" layer="16" font="vector" rot="MR0">220 micro F</text>
-<text x="23" y="52" size="2.54" layer="16" font="vector" rot="MR0">OUT 12V</text>
-<text x="81" y="46" size="2.54" layer="16" font="vector" rot="MR0">IN 12 V</text>
-<text x="59" y="52" size="2.54" layer="16" font="vector" rot="MR0">.:HOMEBREAKERS:.</text>
-<text x="80" y="34" size="1.27" layer="16" font="vector" rot="MR0">4700 micro F</text>
-<text x="19" y="37" size="2.54" layer="16" font="vector" rot="MR0">+</text>
-<text x="64" y="34" size="2.54" layer="16" font="vector" rot="MR0">+</text>
-<text x="19" y="19" size="2.54" layer="16" font="vector" rot="MR0">-</text>
-<text x="64" y="22" size="2.54" layer="16" font="vector" rot="MR0">-</text>
+<text x="14" y="31" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">-</text>
+<text x="36" y="44" size="3.81" layer="16" font="vector" ratio="20" rot="MR0">OUT 12V</text>
+<text x="80" y="44" size="3.81" layer="16" font="vector" ratio="20" rot="MR0">IN 12 V</text>
+<text x="19" y="37" size="3.81" layer="16" font="vector" rot="MR0">+</text>
+<text x="64" y="34" size="3.81" layer="16" font="vector" rot="MR0">+</text>
+<text x="14" y="24" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">-</text>
+<text x="14" y="16" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">-</text>
+<text x="19" y="20" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">-</text>
+<text x="64" y="22" size="2.54" layer="16" font="vector" ratio="20" rot="MR0">-</text>
 </plain>
 <libraries>
 <library name="uchile_robotics_eagle_lib">
@@ -1617,11 +1613,11 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="IC1" library="uchile_robotics_eagle_lib" package="PACKAGE_RP20-2405SEW" value="RP20-2405SEW" x="40.64" y="31.75"/>
-<element name="J4" library="con-jack" package="SPC4078" value="" x="71.12" y="13.05" rot="R90">
-<attribute name="MPN" value="" x="71.12" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="71.12" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="71.12" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="71.12" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="J4" library="con-jack" package="SPC4078" value="" x="71" y="13" rot="R90">
+<attribute name="MPN" value="" x="71" y="13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="71" y="13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="71" y="13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="71" y="13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LEDVOUT" library="eagle-ltspice" package="LED_LD260" value="" x="7.62" y="46.99">
 <attribute name="SPICEMODEL" value="NONE" x="7.62" y="46.99" size="1.778" layer="27" display="off"/>
@@ -1667,12 +1663,13 @@ design rules under a new name.</description>
 <signal name="N$6">
 <contactref element="J4" pad="3"/>
 <contactref element="IC1" pad="1"/>
-<wire x1="71.12" y1="16.05" x2="71.12" y2="28.88" width="1.27" layer="16"/>
-<wire x1="71.12" y1="28.88" x2="68" y2="32" width="1.27" layer="16"/>
-<wire x1="68" y1="32" x2="63.74" y2="32" width="1.27" layer="16"/>
-<wire x1="63.74" y1="32" x2="63.49" y2="31.75" width="1.27" layer="16"/>
 <contactref element="C2" pad="2"/>
-<wire x1="71.12" y1="28.88" x2="71.46" y2="25" width="0" layer="19" extent="16-16"/>
+<wire x1="71" y1="16" x2="71.46" y2="16" width="2.54" layer="16"/>
+<wire x1="71.46" y1="16" x2="71.46" y2="25" width="2.54" layer="16"/>
+<wire x1="71.46" y1="25" x2="71.46" y2="28.54" width="2.54" layer="16"/>
+<wire x1="71.46" y1="28.54" x2="68" y2="32" width="2.54" layer="16"/>
+<wire x1="68" y1="32" x2="63.74" y2="32" width="2.54" layer="16"/>
+<wire x1="63.74" y1="32" x2="63.49" y2="31.75" width="2.54" layer="16"/>
 </signal>
 <signal name="GND1">
 <contactref element="IC1" pad="7"/>
@@ -1693,6 +1690,17 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="18,29,69f530a5d3ddec10"/>
+<approved hash="18,29,6099f929d6e2d4e9"/>
+<approved hash="18,29,07a6fdc32952a8a5"/>
+<approved hash="18,29,e6f27b6d9bf81943"/>
+<approved hash="18,29,0bc1a690d9c9bda0"/>
+<approved hash="18,29,37966e1a8382904a"/>
+<approved hash="18,29,020d9b6db6a8d167"/>
+<approved hash="18,29,c0c77c43715e7ab8"/>
+<approved hash="18,29,cfb4a826568930d3"/>
+</errors>
 </board>
 </drawing>
 </eagle>
