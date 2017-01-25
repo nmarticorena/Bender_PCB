@@ -8157,7 +8157,7 @@ naming: grid - package width</description>
 </classes>
 <parts>
 <part name="IC1" library="uchile_robotics_eagle_lib" deviceset="RP20-2405SEW" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="0207/5V" value="100 ohm"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="0207/5V" value="500 ohm"/>
 <part name="LEDVOUT" library="eagle-ltspice" deviceset="LED_E" device="LD260"/>
 <part name="J4" library="con-jack" deviceset="JACK-PLUG" device="1"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
